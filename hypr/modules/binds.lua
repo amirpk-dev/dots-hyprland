@@ -5,7 +5,7 @@
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu = "rofi -show drun"
+local menu = "~/.dotfiles/rofi/launchers/type-6/launcher.sh"
 local chatgpt = "/opt/brave-bin/brave '--profile-directory=Profile 1' --app-id=cadlkienfkclaiaibeoongdcgmdikeeg"
 
 ---------------------
@@ -19,7 +19,6 @@ hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd(chatgpt))
-
 
 -- Example binds, see https://wiki.hypr.land/configuring/core/binds/ for more
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
